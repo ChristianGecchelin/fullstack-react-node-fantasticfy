@@ -1,0 +1,23 @@
+nav{
+    height: auto;
+    background-color: var(--secondary-color);
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+nav a{
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: var(--fourth-color);
+}
+nav img{
+    width: 100px;
+    height: 50px;
+}
+nav a:visited{
+    color: var(--fourth-color); 
+}
