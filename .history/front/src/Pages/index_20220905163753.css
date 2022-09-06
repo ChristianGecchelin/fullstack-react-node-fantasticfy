@@ -1,0 +1,28 @@
+.section-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-relatedUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+}
+.container-relatedUsers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center
+}

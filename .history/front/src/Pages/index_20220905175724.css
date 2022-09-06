@@ -1,0 +1,53 @@
+.section-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+}
+
+.card-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 10px;
+}
+.container-user .img-user{
+    height: 250px;
+}
+.section-relatedUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+.container-relatedUsers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 100px;
+}
+.container-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-start;
+    font-size: 2rem;
+    text-align: left;
+    gap: 5px;
+}
