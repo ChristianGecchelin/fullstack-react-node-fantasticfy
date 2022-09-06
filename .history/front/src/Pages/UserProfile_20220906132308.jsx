@@ -20,17 +20,14 @@ export const UserProfile = (props) => {
     employment,
   } = userFromDB;
 
-  //getUserFromDB funcion que hace un llamado al backend para obtener el users que coincide con el id pasado
   const getUserFromDB = async () => {
     const response = await axios.get(`http://localhost:5005/users/${id}`);
     return response.data;
   };
-
   const getUsers = async () => {
     const response = await axios.get("http://localhost:5005/users");
     setUsers(response.data);
   };
-  //getRelatedUsers nos muestra los users que coinciden en el key_skill con el de nuestro usuario principal
   const getRelatedUsers = () => {
     if (users) {
       const filteredUsers = users.filter((user) => {

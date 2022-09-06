@@ -10,7 +10,6 @@ export const UserList = () => {
   const [selectValue, setSelectValue] = useState("");
   const [input, setInput] = useState("");
 
-  //getGenderArray es una función que obtiene primero todos los genders de los objetos y filtra los duplicados.
   const getGenderArray = () => {
     if (list) {
       const genders = inmutableList.map((user) => {
@@ -22,7 +21,6 @@ export const UserList = () => {
       setGenderArray(result);
     }
   };
-  //getUsers es el encargado de hacer la llamada al backend para obtener la lista de usuarios
   const getUsers = async () => {
     const response = await axios.get("http://localhost:5005/users");
 
@@ -30,7 +28,6 @@ export const UserList = () => {
     setInmutableList(response.data);
   };
 
-  //filterUsersBySelect es la encargada de filtrar a partir de lo seleccionado los generos similares
   const filterUsersBySelect = () => {
     const filter = inmutableList.filter((user) => {
       return user.gender === selectValue;
@@ -38,7 +35,6 @@ export const UserList = () => {
     setList(filter);
   };
 
-  //filterByName es la funcion que filtra segun coincidencias con el first_name, last_name y hasta username
   const filterByName = () => {
     let result = inmutableList.filter(
       (el) =>
