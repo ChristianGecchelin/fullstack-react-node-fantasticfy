@@ -1,0 +1,22 @@
+.container-pagination{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: 50px;
+}
+.pagination--li{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    outline: none;
+    border:none;
+    background-color:(var(--main-color))
+}
+.pagination--li:hover{
+color:blue
+}
+
+.color{
+    color:var(--third-color)
+}

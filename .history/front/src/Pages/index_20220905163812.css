@@ -1,0 +1,29 @@
+.section-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 50px;
+}
+.card-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-relatedUsers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+}
+.container-relatedUsers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center
+}
